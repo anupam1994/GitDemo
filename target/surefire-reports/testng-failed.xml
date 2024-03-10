@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="AnupamTesting.SeleniumFramework.TestComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Error Validation Test(failed)" verbose="0">
+    <classes>
+      <class name="AnupamTesting.SeleniumFramework.tests.ErrorValidationTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="lunchApplication"/>
+          <include name="productValidation"/>
+        </methods>
+      </class> <!-- AnupamTesting.SeleniumFramework.tests.ErrorValidationTest -->
+    </classes>
+  </test> <!-- Error Validation Test(failed) -->
+  <test thread-count="5" parallel="tests" name="Submit Order Test(failed)" verbose="0">
+    <classes>
+      <class name="AnupamTesting.SeleniumFramework.tests.SubmitOrderTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="submitOrder" invocation-numbers="1"/>
+          <include name="orderHistory"/>
+          <include name="lunchApplication"/>
+        </methods>
+      </class> <!-- AnupamTesting.SeleniumFramework.tests.SubmitOrderTest -->
+    </classes>
+  </test> <!-- Submit Order Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

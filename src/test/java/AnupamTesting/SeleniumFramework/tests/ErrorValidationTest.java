@@ -48,6 +48,7 @@ public class ErrorValidationTest extends BaseTest {
 		cart.goToCart();
 		Boolean match = cart.itemVerification(productName);
 		Assert.assertEquals("true", match);
+		System.out.println("New CHanges");
 	}
 
 }
